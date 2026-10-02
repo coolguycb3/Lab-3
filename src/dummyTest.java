@@ -47,6 +47,16 @@ public class dummyTest {
     }
     @Test
     public void testFind(){
+        dummylink dum = new dummylink();
 
+        dum.add(21);
+        dum.add(67);
+        dum.add(69);
+        dum.add(420);
+
+        assertTrue(dum.find(21));
+        assertTrue(dum.find(67));
+        assertTrue(dum.find(69));
+        assertTrue(dum.find(420));
     }
 }

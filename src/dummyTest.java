@@ -32,4 +32,21 @@ public class dummyTest {
 
         assertEquals("10 20 30", result);
     }
+
+    @Test
+    public void testShowReverse() {
+        dummylink list = new dummylink();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+
+        String result = captureOutput(() -> list.showReverse());
+
+        assertEquals("30 20 10", result);
+    }
+    @Test
+    public void testFind(){
+
+    }
 }

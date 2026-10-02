@@ -73,6 +73,6 @@ public class dummyTest {
 
         String result = captureOutput(() -> DT.show());
 
-        assertEquals("600 90 15", result);
+        assertEquals("600\n90\n15", result);
     }
 }

@@ -66,13 +66,15 @@ public class dummyTest {
 
         DT.add(600);
         DT.add(90);
-        DT.add(15);
+        DT.add(5);
         DT.add(16600);
 
         assertTrue(DT.getout(16600));
+        assertTrue(DT.getout(5));
+        assertTrue(DT.getout(90));
 
         String result = captureOutput(() -> DT.show());
 
-        assertEquals("600\n90\n15", result);
+        assertEquals("600", result);
     }
 }

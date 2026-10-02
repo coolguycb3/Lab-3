@@ -33,7 +33,7 @@ public class dummylink {
         Node current = dummy.next;
 
         while (current != dummy){
-            System.out.println(current.data + " " + "\n");
+            System.out.println(current.data + " ");
             current = current.next;
         }
     }
@@ -46,7 +46,7 @@ public class dummylink {
         }
 
         showReverse(current.next);
-        System.out.print(current.data + " " + "\n");
+        System.out.print(current.data + " ");
     }
     public boolean find(int item) {
         Node current = dummy.next;

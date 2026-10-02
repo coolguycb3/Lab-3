@@ -1,5 +1,3 @@
-import java.util.LinkedList;
-
 public class dummylink {
     private static class Node {
         int data;
@@ -63,7 +61,7 @@ public class dummylink {
     }
 
     // Remove the first occurrence of an item
-    public boolean remove(int item) {
+    public boolean getout(int item) {
         Node previous = dummy;
         Node current = dummy.next;
 

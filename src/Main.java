@@ -22,28 +22,28 @@ public class Main {
         System.out.println("Find 50: " + list.find(50));
 
         // Remove the first occurrence of 20
-        System.out.println("Remove 20: " + list.remove(20));
+        System.out.println("Remove 20: " + list.getout(20));
         System.out.println("List after removing 20:");
         list.show();
 
         // Remove a value that does not exist
-        System.out.println("Remove 50: " + list.remove(50));
+        System.out.println("Remove 50: " + list.getout(50));
 
         // Remove the first and last items
-        list.remove(10);
-        list.remove(40);
+        list.getout(10);
+        list.getout(40);
 
         System.out.println("After removing first and last:");
         list.show();
 
         // Remove everything
-        list.remove(20);
-        list.remove(30);
+        list.getout(20);
+        list.getout(30);
 
         System.out.println("Empty list:");
         list.show();
 
         System.out.println("Find in empty list: " + list.find(10));
-        System.out.println("Remove from empty list: " + list.remove(10));
+        System.out.println("Remove from empty list: " + list.getout(10));
     }
 }

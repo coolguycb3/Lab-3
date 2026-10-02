@@ -59,4 +59,20 @@ public class dummyTest {
         assertTrue(dum.find(69));
         assertTrue(dum.find(420));
     }
+
+    @Test
+    public void testGetout(){
+        dummylink DT = new dummylink();
+
+        DT.add(600);
+        DT.add(90);
+        DT.add(15);
+        DT.add(16600);
+
+        assertTrue(DT.getout(16600));
+
+        String result = captureOutput(() -> DT.show());
+
+        assertEquals("600 90 15", result);
+    }
 }
